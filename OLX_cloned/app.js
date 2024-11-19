@@ -178,3 +178,62 @@ p4type.innerHTML = pet4.type
 p4l.innerHTML = pet4.location
 p4tp.innerHTML = pet4.timePast
 p4i.src = pet4.image
+
+let gymEquipments = [
+    equipment1 = {
+        price: "Rs 100,000",
+        type: "Treadmill Pro 3000",
+        location: "G-10, Islamabad",
+        timePast: "1 week ago",
+        image: "assets/gym1.png"
+    },
+    equipment2 = {
+        price: "Rs 80,000",
+        type: "Multi-Station Home Gym",
+        location: "DHA Phase 5, Karachi",
+        timePast: "2 weeks ago",
+        image: "assets/gym2.png"
+    },
+    equipment3 = {
+        price: "Rs 50,000",
+        type: "Adjustable Dumbbell Set",
+        location: "Blue Area, Islamabad",
+        timePast: "5 days ago",
+        image: "assets/gym3.png"
+    },
+    equipment4 = {
+        price: "Rs 30,000",
+        type: "Exercise Bike with LCD Display",
+        location: "North Nazimabad, Karachi",
+        timePast: "2 weeks ago",
+        image: "assets/gym4.png"
+    }
+];
+
+// For pyari Equipment1 🐕
+g1p.innerHTML = equipment1.price
+g1m.innerHTML = equipment1.type
+g1l.innerHTML = equipment1.location
+g1tp.innerHTML = equipment1.timePast
+g1i.src = equipment1.image
+
+// For pyari Equipment2 🐕
+g2p.innerHTML = equipment2.price
+g2m.innerHTML = equipment2.type
+g2l.innerHTML = equipment2.location
+g2tp.innerHTML = equipment2.timePast
+g2i.src = equipment2.image
+
+// For pyari Equipment3 🐕
+g3p.innerHTML = equipment3.price
+g3m.innerHTML = equipment3.type
+g3l.innerHTML = equipment3.location
+g3tp.innerHTML = equipment3.timePast
+g3i.src = equipment3.image
+
+// For pyari Equipment3 🐕
+g4p.innerHTML = equipment4.price
+g4m.innerHTML = equipment4.type
+g4l.innerHTML = equipment4.location
+g4tp.innerHTML = equipment4.timePast
+g4i.src = equipment4.image
