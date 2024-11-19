@@ -256,11 +256,15 @@
  }
 
 
+ .gymCards img {
+     object-fit: contain !important;
+ }
 
  .card img {
      width: 100%;
      height: 180px;
      object-fit: cover;
+     border-bottom: 3px solid #222;
  }
 
  .card-content {
@@ -393,7 +397,7 @@
      }
 
      .footer-bottom {
-         text-align: center;
+         text-align: center !important;
      }
 
  }
@@ -440,7 +444,7 @@
  .footer-social-icons {
      display: flex;
      gap: 10px;
-     justify-content: center;
+     /* justify-content: center; */
      align-items: center;
      margin-bottom: 20px;
  }
