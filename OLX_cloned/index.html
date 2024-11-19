@@ -10,81 +10,126 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <title>OLX - Buy and Sell for free anywhere in Pakistan with OLX online classifieds</title>
     <style>
-        @media screen and (min-width:1400px) {
-            #responsive-section {
-                max-width: 80%;
-                margin: auto;
-            }
+        footer {
+            background-color: #ebeeef;
+            padding: 40px 20px;
+            color: #002f34;
         }
 
-        @media screen and (min-width:1700px) {
-            #responsive-section {
-                max-width: 65%;
-                margin: auto;
-            }
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: left;
         }
 
-        @media screen and (min-width:2000px) {
-            #responsive-section {
-                max-width: 60%;
-                margin: auto;
-            }
+        .footer-column h4 {
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: bold;
         }
 
-        @media screen and (min-width:2400px) {
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-            #responsive-section,
-            #searchArea,
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #002f34;
+            transition: color 0.3s;
+        }
+
+        .footer-column ul li a:hover {
+            color: #017f7f;
+        }
+
+        .footer-social-icons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .footer-social-icons .icon-placeholder {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        .app-badges {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .app-badges .badge-placeholder {
+            width: 120px;
+            height: 40px;
+            display: inline-block;
+        }
+
+        .footer-bottom {
+            background-color: #002f34;
+            color: #fff;
+            text-align: end;
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+
+        @media (max-width: 500px) {
+
+            .location,
+            .search-input {
+                display: none;
+            }
+
+            .search-btn {
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                transition: all 0.4s;
+            }
+
+            .search-btn:active {
+                background-color: #024c54;
+            }
+
             #logoArea {
-                max-width: 50%;
-                margin: auto;
-            }
-        }
-
-        @media screen and (min-width:2900px) {
-
-            #responsive-section,
-            #searchArea,
-            #logoArea {
-                max-width: 44%;
-                margin: auto;
-            }
-        }
-
-        @media (max-width: 768px) {
-
-            .container {
-                grid-template-columns: repeat(3, 1fr);
-                padding: 30px 20px;
+                font-size: 15px;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
             }
 
             .categories-section {
-                padding: 30px 0px;
+                grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+                padding: 30px 10px;
             }
 
-            #logoArea {
-                padding: 10px 20px;
+            .category img{
+                width: 80px;
+                height: 80px;
             }
 
-            .search-bar-container {
-                margin: 20px;
+            .search-bar{
+                flex-grow: 0;
             }
 
-            #eight-spans {
-                padding: 15px 7px;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 12px;
+            .search-bar-container{
+                margin: 15px 80px;
             }
-
-            .cards-container{
-                padding: 40px 60px;
-            }
-
-            .h1{
-                font-size: 35px;
-            }
-
         }
     </style>
 </head>
@@ -398,6 +443,66 @@
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>POPULAR CATEGORIES</h4>
+                    <ul>
+                        <li><a href="#">Cars</a></li>
+                        <li><a href="#">Flats for rent</a></li>
+                        <li><a href="#">Mobile Phones</a></li>
+                        <li><a href="#">Jobs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>TRENDING SEARCHES</h4>
+                    <ul>
+                        <li><a href="#">Bikes</a></li>
+                        <li><a href="#">Watches</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Dogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>ABOUT US</h4>
+                    <ul>
+                        <li><a href="#">About Dubizzle Group</a></li>
+                        <li><a href="#">OLX Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">OLX for Businesses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>OLX</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>FOLLOW US</h4>
+                    <div class="footer-social-icons">
+                        <span class="icon-placeholder"><i class="ri-twitter-fill"></i></span>
+                        <span class="icon-placeholder"><i class="ri-facebook-fill"></i></span>
+                        <span class="icon-placeholder"><i class="ri-youtube-fill"></i></span>
+                        <span class="icon-placeholder"><i class="ri-instagram-line"></i></span>
+                    </div>
+                    <div class="app-badges">
+                        <span class="badge-placeholder"><img
+                                src="https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg"></span>
+                        <span class="badge-placeholder"><img
+                                src="https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg"></span>
+                        <span class="badge-placeholder"><img
+                                src="https://www.olx.com.pk/assets/iconAppGallery_noinline.6092a9d739c77147c884f1f7ab3f1771.svg"></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            Free Classifieds in Pakistan . © 2006-2026 OLX
+        </div>
     </main>
     <script src="app.js"></script>
 </body>
